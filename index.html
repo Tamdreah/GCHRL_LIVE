@@ -3,6 +3,7 @@
 <head>
 <title>GCRL Live Results</title>
 </head>
+
 <body>
 
 <h1 id="track">Loading...</h1>
@@ -15,12 +16,15 @@
 <th>Driver</th>
 <th>Laps</th>
 </tr>
-<tbody id="results"></tbody>
+<tbody id="results">
+</tbody>
 </table>
 
 <script>
 
-fetch('race.json')
+function loadRaceData() {
+
+fetch('race.json?t=' + Date.now())
 .then(function(response){
     return response.json();
 })
@@ -48,6 +52,12 @@ fetch('race.json')
     document.getElementById('results').innerHTML = html;
 
 });
+
+}
+
+loadRaceData();
+
+setInterval(loadRaceData, 1000);
 
 </script>
 
