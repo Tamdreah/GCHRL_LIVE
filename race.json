@@ -1,18 +1,28 @@
 {
-  "track": "Thunder Lane",
-  "status": "Heat Over",
-  "heat": 1,
-  "totalHeats": 5,
-  "drivers": [
-    {
-      "position": 1,
-      "name": "Phat Man",
-      "laps": 32
-    },
-    {
-      "position": 2,
-      "name": "Hulio",
-      "laps": 31
-    }
-  ]
+    "track":  "Thunder Lane",
+    "drivers":  [
+                    {
+                        "position":  1,
+                        "name":  "Phat Man",
+                        "laps":  0.37
+                    },
+                    {
+                        "position":  2,
+                        "name":  "Hulio",
+                        "laps":  0.37
+                    },
+                    {
+                        "position":  3,
+                        "name":  "Statz",
+                        "laps":  0.369
+                    },
+                    {
+                        "position":  4,
+                        "name":  "Ricky",
+                        "laps":  0.369
+                    }
+                ],
+    "status":  "Heat Over",
+    "totalHeats":  5,
+    "heat":  1
 }
